@@ -1,15 +1,18 @@
 package org.example;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        // updated latest code and
-        WebDriverManager.chromedriver().setup();
+        /*WebDriverManager.chromedriver().setup();
         WebDriver driver= new ChromeDriver();
-        driver.get("http://www.google.com");
+        driver.get("http://www.google.com");*/
+//        WebDriverManager.edgedriver().setup();
+        System.setProperty("webdriver.edge.driver","/Users/meera496/Desktop/MShaik/Project_Software/Selenium_Drivers/msedgedriver");
+        WebDriver driver1= new EdgeDriver();
+        driver1.get("http://www.google.com");
+        driver1.quit();
     }
 }
