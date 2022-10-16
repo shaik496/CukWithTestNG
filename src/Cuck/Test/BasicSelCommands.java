@@ -20,6 +20,8 @@ public class BasicSelCommands {
         driver.get("https://learn-automation.com/");
         driver.manage().timeouts().implicitlyWait(Duration.ofMillis(5));
         List<WebElement> element = driver.findElements(By.tagName("a"));
+
+
         List<String> valu = new ArrayList<String>();
         for (WebElement vol :
                 element) {
@@ -42,6 +44,8 @@ public class BasicSelCommands {
         }
 
 
-        UnsignedInteger unsignedInteger = new
+
     }
+
+
 }
