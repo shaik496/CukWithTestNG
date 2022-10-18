@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="springframework.B" name="Bref">
+        <property name="y" value="96"></property>
+    </bean>
+    <bean class="springframework.A" name="Aref">
+        <property name="x" value="960"/>
+        <property name="ob" ref="Bref"/>
+        <!--<property name="ob">
+            <ref bean="Bref"/>
+        </property>-->
+    </bean>
+
+    <bean class="" name="">
+        <constructor-arg value="Meeravali"/>
+        <constructor-arg value="496" type="int" index="2"/>
+
+        <constructor-arg ref="cer"/>
+
+
+    </bean>
+</beans>
