@@ -1,7 +1,7 @@
-package springframework;
+package springframework.steriotype;
 
 
-public class Student {
+public class Student2 {
 
     private int studentID;
     private String studentName;
@@ -32,13 +32,13 @@ public class Student {
         this.studentAddress = studentAddress;
     }
 
-    public Student(int studentID, String studentName, String studentAddress) {
+    public Student2(int studentID, String studentName, String studentAddress) {
         this.studentID = studentID;
         this.studentName = studentName;
         this.studentAddress = studentAddress;
     }
 
-    public Student(){
+    public Student2(){
 
     }
 

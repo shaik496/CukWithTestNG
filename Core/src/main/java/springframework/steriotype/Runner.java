@@ -1,8 +1,8 @@
-package springframework;
+package springframework.steriotype;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import springframework.steriotype.A;
 
 public class Runner {
 

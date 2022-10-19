@@ -1,4 +1,4 @@
-package springframework;
+package springframework.steriotype;
 
 import org.openqa.selenium.WebDriver;
 

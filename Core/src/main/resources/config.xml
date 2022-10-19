@@ -7,7 +7,7 @@
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="springframework.Student" name="studentClass">
+    <bean class="springframework.steriotype.Student2" name="studentClass">
         <property name="studentID" value="20496"/>
         <property name="studentName" value="Shaik Meeravali"/>
         <property name="StudentAddress" value="Hyderabad"/>

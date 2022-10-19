@@ -1,4 +1,4 @@
-package springframework;
+package springframework.steriotype;
 
 public class A {
 

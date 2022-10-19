@@ -7,10 +7,10 @@
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <bean class="springframework.B" name="Bref">
+    <bean class="springframework.steriotype.B" name="Bref">
         <property name="y" value="96"></property>
     </bean>
-    <bean class="springframework.A" name="Aref">
+    <bean class="springframework.steriotype.A" name="Aref">
         <property name="x" value="960"/>
         <property name="ob" ref="Bref"/>
         <!--<property name="ob">

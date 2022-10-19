@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/util
+   http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--    standalsone list-->
+
+
+    <util:list list-class="java.util.LinkedList" id="Mybestfriends">
+        <value>Aman</value>
+        <value>Shaik</value>
+        <value>Rajesh</value>
+        <value>Mahesh</value>
+    </util:list>
+
+<!--     stand-standalone properties-->
+
+    <util:properties id="dbConfig">
+        <prop key="driver">com.mysql.jdbc.Driver</prop>
+        <prop key="userName">Mshaik</prop>
+        <prop key="password">Jone</prop>
+
+    </util:properties>
+
+    <util:map map-class="java.util.HashMap" id="fee">
+
+        <entry key="Java" value="2000"/>
+        <entry key="Python" value="5000"/>
+        <entry key="Hybernet" value="2000"/>
+        <entry key="Selenium" value="1000"/>
+    </util:map>
+    <bean class="springframework.standalone.Person" name="person1">
+        <property name="friends" ref="Mybestfriends"/>
+    </bean>
+
+    <bean class="springframework.standalone.Person" name="person2">
+        <property name="friends" ref="Mybestfriends"/>
+        <property name="feeStructure" ref="fee"/>
+        <property name="properties" ref="dbConfig"/>
+    </bean>
+
+</beans>
