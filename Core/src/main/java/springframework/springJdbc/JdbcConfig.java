@@ -7,7 +7,6 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
 
-
 @Configuration
 public class JdbcConfig {
 
@@ -22,7 +21,6 @@ public class JdbcConfig {
         return ds;
     }
 
-
     @Bean(name = {"jdbcTemplate"})
     public JdbcTemplate getJdbcTemplate() {
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
@@ -30,14 +28,11 @@ public class JdbcConfig {
         return jdbcTemplate;
     }
 
-
-    @Bean(name={"studentDao"})
+    @Bean(name = {"studentDao"})
     public StudentDao getStudentDao() {
-
         StudentImpl student = new StudentImpl();
         student.setJdbcTemplate(getJdbcTemplate());
         return student;
     }
-
 
 }
