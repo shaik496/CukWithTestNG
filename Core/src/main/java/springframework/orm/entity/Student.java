@@ -27,7 +27,7 @@ public class Student {
     public Student() {
     }
 
-    public int getSid(int i) {
+    public int getSid() {
         return id;
     }
 

@@ -10,5 +10,8 @@
         <module name="Core" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SpringWebApp" target="19" />
+    </bytecodeTargetLevel>
   </component>
 </project>

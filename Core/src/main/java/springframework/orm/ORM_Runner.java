@@ -16,5 +16,6 @@ public class ORM_Runner {
         student.setAddress("Hyderabad");
         int value = dao.insert(student);
         System.out.println("Bhai value inserted " + value);
+
     }
 }

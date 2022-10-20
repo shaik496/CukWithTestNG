@@ -1,4 +1,5 @@
 springframework/standalone/StandAloneRunner.class
+springframework/orm/ORM_AppRunner.class
 springframework/standalone/Person.class
 springframework/springJdbc/StudentImpl.class
 springframework/steriotype/Employee.class
