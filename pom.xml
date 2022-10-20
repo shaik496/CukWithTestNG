@@ -11,7 +11,7 @@
     <modules>
         <module>Core</module>
         <module>Tests</module>
-        <module>SpringWebApp</module>
+
     </modules>
 
     <properties>
